@@ -1,0 +1,28 @@
+.container {
+  width: min(100%, 120rem);
+  // max-width: 120rem; //But min(function) is more responsive page
+  margin: 6rem auto;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-dark);
+
+  //MEDIA-QUERY
+  @include respond(laptop) {
+    width: min(100%, 110rem);
+    // margin: 0;
+  }
+
+  @include respond(tab-land) {
+    width: min(100%, 100rem);
+  }
+
+  @include respond(tab-port) {
+    width: min(90%, 90rem);
+  }
+
+  @include respond(normal-phone) {
+    margin: 4.5rem auto;
+  }
+  @include respond(smallest-phone) {
+    margin: 2.5rem auto;
+  }
+}

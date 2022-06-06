@@ -1,0 +1,41 @@
+.footer {
+  position: relative;
+  border-top: 0.7rem solid var(--grey-dark-3);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    padding: 3%;
+    border-bottom: 0.2rem solid var(--grey-dark-3);
+    margin-bottom: 2rem;
+
+    &--main {
+      color: var(--grey-light-3);
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    &--item {
+      margin-right: 1rem;
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: var(--royal-candy-light-1);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--royal-candy);
+      transform: translateY(-0.5rem);
+    }
+  }
+}

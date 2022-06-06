@@ -1,0 +1,29 @@
+:root {
+  --grey-light-1: #fafafa;
+  --grey-light-2: #eee;
+  --grey-light-3: #ccc;
+
+  --grey-dark-1: #000;
+  --grey-dark-2: #333;
+  --grey-dark-3: #777;
+
+  --blue-dark: #101d2c;
+  --royal-candy: #dc281e;
+  --royal-candy-light-1: #e76962;
+  --royal-candy-light-2: #ea7e78;
+
+  --playbord-gradient: linear-gradient(to right bottom, #536976, #292e49);
+  --winningbord-gradient: linear-gradient(to right, #11998e, #38ef7d);
+
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+//Some SASS variables for media-query. Because CSS variables cannot be called in MEDIA-QUERY also not in JS.
+$big-desktop: 112.5em; //1em=16x(1800px/16px = 112.5em)
+$laptop: 75em; //1em=16px(1200px/16px = 75em)
+$tab-land: 68.75em; //1em=16px(1100px/16px = 68.75em)
+$tab-port: 56.25em; //1em=16px(900px/16px = 56.25em)
+$large-phone: 46.88em; //1em=16px(750px/16px = 47em)
+$normal-phone: 37.5em; //1em=16px(600px/16px = 37.5em)
+$small-phone: 28.13em; //1em=16px(450px/16px = 28.13em)
+$smallest-phone: 21.88em; //1em=16px(350px/16px = 18.75em)

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Guess game" />
+
+    <!-- FAVICON(For DESKTOP 64by64) **?v-2 updates automatic faviconicon without deleting browser catch -->
+    <link rel="icon" type="image/png" href="img/favicon/fav_desktop.png?v=2" />
+    <!-- FAVICON(For IOS/iPHONE 180by180) -->
+    <link rel="apple-touch-icon" href="img/favicon/apple_touch_icon.png" />
+    <!-- FAVICON(For Android 192by192 and 512by512, BUT WE need to create a file-extention named "manifest.webmanifest" for ANDROID) -->
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JS -->
+    <script defer src="js/script.js"></script>
+
+    <title>Guess &mdash;The Number&mdash;</title>
+  </head>
+  <body>
+    <div class="container playbord">
+      <header class="header">
+        <div class="header__main">
+          <button class="btn again header__main--1">New Game</button>
+          <p class="header__main--2">Choose between 1 and 20</p>
+        </div>
+        <h1>Guess The Number!</h1>
+        <div class="number">?</div>
+      </header>
+
+      <main class="game">
+        <div class="game__message">
+          <p class="message">Start guessing...</p>
+        </div>
+        <section class="game__left">
+          <div class="game__left-box">
+            <input type="number" class="guess" />
+            <button class="btn check">Check!</button>
+          </div>
+        </section>
+        <section class="game__right">
+          <div class="game__right-box">
+            <p class="label-score">💯 Score: <span class="score">20</span></p>
+            <p class="label-highscore">
+              🥇 Highscore: <span class="highscore">0</span>
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__text">
+          Made with <span class="heartbeat">🧡</span> by
+          <span class="footer__text--main">Abdur RAHMAN</span>
+          <br />Original project from Jonas Schmedtmann (JS course).
+        </p>
+        <ul class="footer__nav">
+          <li class="footer__nav--item">
+            <a href="#" class="footer__nav--link">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="https://github.com/3abdur3" class="footer__nav--link">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a
+              href="https://www.linkedin.com/in/abdur-rahman-62b80788/"
+              class="footer__nav--link"
+            >
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

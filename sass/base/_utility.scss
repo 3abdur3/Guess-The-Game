@@ -1,0 +1,34 @@
+.playbord {
+  background-image: var(--playbord-gradient);
+}
+
+.winningbord {
+  background-image: var(--winningbord-gradient);
+}
+
+.heartbeat {
+  display: inline-block; //It needs to be inline-block to make it animation
+  animation: heartBeat 1.5s infinite;
+}
+
+.mobile_display {
+  @include respond(small-phone) {
+    display: flex;
+    // flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.scroe__box {
+  @include respond(small-phone) {
+    margin-top: -5rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(smallest-phone) {
+    grid-template-columns: 1fr;
+  }
+}

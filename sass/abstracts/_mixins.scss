@@ -1,0 +1,62 @@
+// ******  MEDIA QUERY MANAGER   ********
+// VERY IMPORTANT NOTE: Big screen first should be used in media-query, then small
+
+/* Here '@content' directive allows us to pass a block of code into mixin
+Here '@if' is also a directive */
+//'em'(1em=16px) is the best option for media-query. 'Rem' fail to work in some browsers
+@mixin respond($breakpoint) {
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: $big-desktop) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: $laptop) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: $tab-land) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: $tab-port) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large-phone {
+    @media only screen and (max-width: $large-phone) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == normal-phone {
+    @media only screen and (max-width: $normal-phone) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: $small-phone) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == smallest-phone {
+    @media only screen and (max-width: $smallest-phone) {
+      @content;
+    }
+  }
+
+  // FOR HAMBURGER MENU ACTIVATION
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: $tab-port) {
+      @content;
+    }
+  }
+}

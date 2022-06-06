@@ -1,0 +1,24 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+
+    @include respond(small-phone) {
+      padding: 1.8rem 2.5rem;
+    }
+    @include respond(smallest-phone) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.btn:hover {
+  background-color: #ccc;
+}

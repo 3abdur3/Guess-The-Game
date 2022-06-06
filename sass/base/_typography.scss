@@ -1,0 +1,78 @@
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include respond(normal-phone) {
+    font-size: 3rem;
+  }
+  @include respond(small-phone) {
+    top: 55%;
+    font-size: 2.5rem;
+  }
+  @include respond(smallest-phone) {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+  }
+}
+
+.number {
+  background: var(--royal-candy-light-1);
+  color: var(--gre-dark-2);
+  font-size: 6rem;
+  width: 15rem;
+  height: 15rem;
+  padding: 3rem 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  @include respond(small-phone) {
+    width: 10rem;
+    height: 10rem;
+    font-size: 4.5rem;
+  }
+  @include respond(smallest-phone) {
+    width: 9rem;
+    height: 9rem;
+    font-size: 4rem;
+  }
+}
+
+.guess {
+  background: none;
+  border: 4px solid var(--royal-candy-light-1);
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+
+  @include respond(small-phone) {
+    width: 20rem;
+    font-size: 3.5rem;
+  }
+  @include respond(smallest-phone) {
+    width: 12rem;
+    font-size: 2.5rem;
+  }
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+.check {
+  // To bring the check button in the center
+  display: block;
+  margin: 0 auto;
+}

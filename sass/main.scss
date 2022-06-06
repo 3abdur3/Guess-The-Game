@@ -1,0 +1,19 @@
+// *****ABSTRACTS*****
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+// *****BASE*****
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utility';
+
+// *****COMPONENTS*****
+@import 'components/buttons';
+@import 'components/container';
+@import 'components/footer';
+
+// *****LAYOUTS*****
+@import 'layouts/header';
+@import 'layouts/game';
